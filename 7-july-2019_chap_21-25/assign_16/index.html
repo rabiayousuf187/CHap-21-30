@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Split String</title>
+</head>
+<script> 
+    // 16. Write a program to convert the following string to an array using string split method. var university = “University of Karachi”; Display the elements of array in your browser.
+    
+
+    // Input
+    var university = "University of Karachi",
+        letter_arr = new Array ();
+
+
+        // Input // profeSSor aLi nAqvi is a gReaT cOMputer sciEntIST.
+
+        document.write("<h4>Split String:</h4>");
+        document.write("Your given string is: " + university);
+        document.write("<h4>After Split String:</h4>");
+
+        for(var i = 0; i < university.length ; i++)
+        {
+            letter_arr[i] = university[i].split("");
+            document.write(letter_arr[i] + "<br>");
+    
+        }
+    
+</script>
+<body>
+    
+</body>
+</html>
+

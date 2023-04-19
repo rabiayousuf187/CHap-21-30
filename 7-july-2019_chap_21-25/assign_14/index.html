@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Search in Array</title>
+</head>
+<script>
+    // 14. You have an array
+        // A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+        // Write a program to enable “search by user input” in an
+        // array. After searching, prompt the user whether the given
+        // item is found in the list or not.
+        // Note: Perform case insensitive search. Whether the user
+        // enters cookie, Cookie, COOKIE or coOkIE, program
+        // should inform about its availability. Example:
+
+
+        // declare
+       var  bakert_items,
+            search_input,
+            pos_search_input;
+
+
+            bakert_items = [ "cake" ,  "apple pie",  "cookie" ,  "chips" ,  "patties" ];
+
+
+            search_input = prompt("Welcome to My Bakery. What do you want to order \nsir/ma'am?\ncake , apple pie ,  cookie ,  chips ,  patties");
+            search_input = search_input.toLowerCase();
+            if (search_input != null)
+            {
+                // Index of match Item
+                pos_search_input = bakert_items.indexOf(search_input);
+                // index of match in array
+                // if match posi... is >= 0
+                // if not match posi... is = -1
+                console.log(pos_search_input);
+                if ( pos_search_input >= 0 )
+                {
+                    alert(search_input + " is avaliable at index " + pos_search_input + " in our Bakery.");
+                    document.write(search_input + " is <b>avaliable</b> at index " + pos_search_input + " in our Bakery.");
+                }
+                // if not match posi... is = -1
+                else
+                {
+                    alert("We are sorry. " + search_input + " is not avaliable in our Bakery.");
+                    document.write("We are sorry. " + search_input + " is <b>not avaliable</b> in our Bakery.");
+                }
+            }
+            else
+            {
+                alert("You Quit session.")
+            }
+       
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Last Char</title>
+</head>
+<script> 
+        // 17. Write a program to display the last character of a user
+        // input.
+    
+
+    // Input
+    var input,
+        letter_arr = [],
+        last_char_index;
+
+
+     input = prompt("Enter the Content\nI will Show You the Last Character");
+
+        if (input != null)
+        {
+
+            document.write("<h4>Display Last Character:</h4>");
+            document.write("User Input: " + input);
+
+            //last char index
+            letter_arr = input.split("");
+            last_char_index = input.length - 1;
+            document.write("<br>Last Character of input: " + input[last_char_index]);
+  
+
+        }
+        else
+        {
+            alert("You Quit session.")
+        }
+
+</script>
+<body>
+    
+</body>
+</html>
+

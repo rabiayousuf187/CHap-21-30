@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>DOT remove</title>
+</head>
+<script>
+    //  12. Write a program that converts the variable num to string.
+    //      var num = 35.36 ;
+    //      Remove the dot to display “3536” display in your browser.
+
+
+        // declare
+        var num = 35.36 ;
+
+        num = num.toString();
+
+               document.write("<h4>Remove Decimal:</h4>");
+               document.write("Initial Number: " + num + "<br>");
+
+               var dot_index = num.indexOf(".");
+
+               var before_dot = num.slice( 0 , dot_index );
+               console.log(before_dot);
+
+               var after_dot = num.slice( dot_index + 1 );
+               console.log(after_dot);
+                
+                var rem_dot_num = before_dot + after_dot;
+               document.write("Result: " + rem_dot_num );
+               document.write("<br><br>Result Type: " + typeof rem_dot_num );
+       
+</script>
+<body>
+    
+</body>
+</html>

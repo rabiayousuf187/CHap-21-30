@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Concate Stringsss</title>
+</head>
+<script>
+    // 6. Repeat Q1 using string concat() method
+
+    // 1. Write a program that takes two user inputs for first and
+    // last name using prompt and merge them in a new variable
+    // titled fullName. Greet the user using his full name.
+       
+        // declare
+       var  in_first_nam,
+            in_last_nam,
+            fullName;
+
+        
+
+            in_first_nam = prompt("Enter Your First Name:");
+            in_last_nam = prompt("Enter Your Last Name:");
+            
+            if (in_first_nam != null)
+            {
+               
+                if (in_last_nam != null)
+                {
+                   
+                    fullName = in_first_nam.concat(" ",in_last_nam);
+                    if(+in_first_nam <= 0 || +in_first_nam > 0 || +in_last_nam <= 0 || +in_last_nam > 0 )
+                    {
+                        alert("Invalid Input in First Name or Last Name.")
+                    }
+                    else
+                    {
+                        alert("Hello " + fullName + "!\nWelcome in Web Development Portal")
+                    }
+
+                }
+                else
+                {
+                    alert("You didn't enter Last Name.\nSession Terminated.");
+                }
+            }
+            else
+            {
+                alert("You didn't enter First Name.\nSession Terminated.");
+            }
+       
+</script>
+<body>
+    
+</body>
+</html>

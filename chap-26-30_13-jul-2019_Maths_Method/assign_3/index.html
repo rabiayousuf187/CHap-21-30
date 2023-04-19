@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Absolute Value</title>
+</head>
+<script>
+        // 3. Write a program that displays the absolute value of a
+        //     number.
+        //     E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+
+    let input_num = prompt("Enter Number to Display Absolute Value:\ne.g: -4");
+
+    if( input_num != null && +input_num < 0)
+    {
+        let absolute_val = +input_num * -1 ;
+
+        document.write("<h4>Absolute Value:</h4>");
+        document.write("<br>The absolute value of <b>" + input_num + "</b> is <b>" + absolute_val + "</b> ");
+        
+    }
+    else if( input_num != null && +input_num > 0)
+    {
+        let absolute_val = +input_num;
+
+        document.write("<h4>Absolute Value:</h4>");
+        document.write("<br>The absolute value of <b>" + input_num + "</b> is <b>" + absolute_val + "</b> ");
+        
+    }
+    else
+    {
+        alert("You didn't Answer or Your input number is not a negative integer.")
+    }
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COIN TOSS</title>
+
+    <!--           Bootstrap CSS Stylesheet             -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!--           Customize Stylesheet                  -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    <!--           Font awesome 5.8.2                 -->
+    <!-- <link rel="stylesheet" type="text/css" href="fontawesome-5.9.0/css/all.css"> -->
+
+</head>
+<script>
+        // 5. Write a program that simulates a coin toss using random() method of JS Math class. Display the value of coin in your browser
+
+        function fun_coin_val(){
+
+            let gen_ran = fun_gen_ran();
+            let rand_coin_val = Math.round(gen_ran);
+
+            console.log(rand_coin_val);
+            return rand_coin_val;
+
+        }
+    
+
+        function fun_gen_ran(){
+
+            let gen_ran_coin = Math.random() * 2;
+            console.log(gen_ran_coin);
+
+            return gen_ran_coin;
+
+        }
+    
+
+        // let gen_ran_coin = Math.random() * 2;
+        // console.log(gen_ran_coin);
+
+        let coin_val = fun_coin_val();
+        console.log(coin_val);
+
+        document.write ("<h4>Coin Toss:</h4>");
+        document.write("<br>Random Value: <b>" + coin_val + "</b>");
+
+
+        if ( coin_val == 1 )
+        {
+
+            document.write("<br>random coin value: <b>Tails</b>");
+            
+        }
+        else if( coin_val == 2 )
+        {
+
+            document.write("<br>random coin value: <b>Heads</b>");
+            
+        }
+        else if ( coin_val == 0)
+        {
+
+          alert("Try Again");
+          document.write("<br>Your value is invalid.");
+            
+        }
+        // document.write ("To genarate Random coin Value:");
+        // document.write ("<button class='btn btn-primary' onclick='fun_coin_val()'> Click Here</button>");
+
+    
+    
+</script>
+<body>
+
+     <!-- <h4>Random coin Value:</h4>
+     <p>To genarate Random coin Value:</p>
+    <button class="btn btn-primary" onclick="fun_coin_val()"> Click Here</button> -->
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Mobile & String Length</title>
+</head>
+<script>
+    //  11. Write a program that takes user input. Convert and
+    //  show the input in title case.
+
+
+        // declare
+       var  in_string;
+
+
+            in_string = prompt("Enter Any Content to Convert into Title Case:");
+            
+            if (in_string != null)
+            {
+               document.write("<h4>Convert into Title Case:</h4>");
+               document.write("User Input: " + in_string + "<br>");
+
+            
+                var first_letter = in_string.substr(0,1);      //only 1st letter uppercase
+                var first_letter_upper = first_letter.toLocaleUpperCase();
+                console.log(first_letter_upper);
+                
+                var remain_letters = in_string.substr(1);      //
+                console.log(remain_letters);
+
+                var remain_letters_lower = remain_letters.toLowerCase();         //only remain letters lowercase
+                console.log(remain_letters_lower);
+
+                var updated_string = first_letter_upper + remain_letters_lower;
+               document.write("Title Case: " + updated_string);
+            }
+            else
+            {
+                alert("You Quit Session.");
+            }
+       
+</script>
+<body>
+    
+</body>
+</html>
